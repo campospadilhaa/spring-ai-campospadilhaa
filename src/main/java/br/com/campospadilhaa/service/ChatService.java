@@ -28,7 +28,7 @@ public class ChatService {
 						OpenAiChatOptions.builder()
 
 							// informa qual o modelo de dados que será utilizado
-							.model("gpt-40")
+							.model("gpt-4o")
 
 							// quanto maior este número mais criativo será a AI
 							.temperature(0.4)
