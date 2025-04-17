@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "8dc14cd8-3625-4a91-845f-9e1b92b0a528",
+		"name": "spring-ai-campospadilhaa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7727045",
+		"_collection_link": "https://ti-fumec.postman.co/workspace/TI-FUMEC-Workspace~c54dca1e-0bf7-4471-8f86-a13a973a81fd/collection/7727045-8dc14cd8-3625-4a91-845f-9e1b92b0a528?action=share&source=collection_link&creator=7727045"
+	},
+	"item": [
+		{
+			"name": "Ask AI",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/ai/ask-ai?prompt=O que tem de bom lá?",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"ai",
+						"ask-ai"
+					],
+					"query": [
+						{
+							"key": "prompt",
+							"value": "O que tem de bom lá?"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ask AI Options",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/ai/ask-ai-options?prompt=Liste, por favor, as principais universidade de Belo Horizonte/MG",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"ai",
+						"ask-ai-options"
+					],
+					"query": [
+						{
+							"key": "prompt",
+							"value": "Liste, por favor, as principais universidade de Belo Horizonte/MG"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Recipe Creator",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/ai/recipe-creator?ingredients=arroz,feijão,bife,salada&cuisine=brasileira&dietaryRestrictions=livre",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"ai",
+						"recipe-creator"
+					],
+					"query": [
+						{
+							"key": "ingredients",
+							"value": "arroz,feijão,bife,salada"
+						},
+						{
+							"key": "cuisine",
+							"value": "brasileira"
+						},
+						{
+							"key": "dietaryRestrictions",
+							"value": "livre"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Generate Image",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/ai/generate-image?prompt=passaro bonitinho",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"ai",
+						"generate-image"
+					],
+					"query": [
+						{
+							"key": "prompt",
+							"value": "passaro bonitinho"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.ai.image.ImageResponse;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -12,6 +13,7 @@ import br.com.campospadilhaa.service.ImageService;
 import br.com.campospadilhaa.service.RecipeService;
 
 @RestController
+@RequestMapping("ai")
 public class GenerativeIAController {
 
 	private final ChatService chatService;
